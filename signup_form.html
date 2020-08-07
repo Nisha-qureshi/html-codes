@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login form</title>
+<style>
+	#mdiv{
+	 background-image : url("4k.jpg");
+            background-size:cover;
+	 z-index="-1";
+	 width:100%;
+	 height:100%;
+	 filter:contrast(100%);
+	}
+
+            #main {
+            transform:translate(100%,20%);
+            width:25%;
+            padding:20px;
+            border:inset 2px grey;
+            border-radius:50px;
+	 background-color:white;
+        
+            }
+            h2{
+            color:black;
+            font:serif;
+            font-size:35px;
+            background:-webkit-linear-gradient(grey,black);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            }
+            .user{
+                box-shadow: 0 2px 1px lightgrey;
+                width:20em;
+            }
+
+            button{
+            background:linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)) url("C:\Users\hp\Pictures\Wallpapers\k.jpg");
+            color:white;
+            background-color:black;
+            outline:none;
+            box-shadow:0 5px #999;
+            padding:5px 10px;
+            font-size:20px;
+            border-radius:20px;
+            transition:all .3s;
+            transform: skew(20,30);
+            }
+
+            button:active{
+                box-shadow:0 0 #666;
+                transform:translateY(7px);
+                
+            }
+</style>
+</head>
+<body>
+        <div id="main">
+	 <form onsubmit="return validate()" action="message.html" > 		
+            	<h2>Registeration form </h2>
+            	<label><b>Name: </b>  </label><br>
+            	<input id="uname" placeholder="Username" required>
+		<label id="uwrong" color="red"; visibility="hidden">Invalid</label>
+            	<br/><br/>
+            
+		<label><b>Email: </b>  </label><br />
+            	<input id="email" type="email" placeholder="Email" required>
+		<label id="ewrong" style="visibility:hidden">Invalid</label>
+           	 	<br/><br/>
+           
+		 <label><b>Password: </b> </label><br />
+           		 <input id="pass" type="password" placeholder="********" required>
+		<label id="pwrong" visibility="hidden">Invalid</label>
+            	<br/><br/>
+        
+		<!--    <label><b>Confirm Password:</b></label><br /><br />
+            	<input id="pass" type="password" placeholder="*******" required />
+            	<br /><br /> -->
+            
+		<input type="radio" name="sex" checked />female
+            	<input type="radio" name="sex" />male
+            	<input type="radio" name="sex" />other
+            	<br /><br />
+            
+		<label><b>Country:</b></label><br /><br />
+           		 <select required>
+            	<option>Select</option>
+           		<option>India</option>
+            	<option>Pakisthan</option>
+            	<option>Nepal</option>
+            	<option>Bhutan</option>
+            	<option>Shri Lanka</option>
+            	<option>Afganisthan</option>
+            	<option>America</option>
+            	<option>China</option>
+            	<option>Iran</option>
+            	<option>Irack</option>
+            	<option>Saudi Arebia</option>
+            	<option>Dubai</option>
+            	<option>France</option>
+            	<option>Libiya</option>
+            	<option>Kuvat</option>
+            	<option>Kjakasthan</option>
+            	<option>Australiya</option>
+            	</select><br/><br/>
+            
+            	<input type="submit" value="Sign up"/>
+            	<input type="reset" value="Reset" />
+		</form>
+        
+</div>
+</body>
+</html>

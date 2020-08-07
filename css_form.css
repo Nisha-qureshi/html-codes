@@ -1,0 +1,37 @@
+body{
+margin:0;
+padding:0;
+}
+div h1{
+text-align:center;
+color:crimson;
+}
+hr{
+background-color:black;
+height:1px;
+}
+div{
+margin:7em 20em 0 20em;
+padding:10px;
+height:60em;
+background-color:rgba(47,79,79,0.2);
+border:2px solid black;
+box-shadow:;
+
+}
+label{
+font-weight:bold;
+font-family:verdana;
+}
+input{
+width:15em;
+background-color:rgba(128,128,128,0.2);
+font-size:15px;
+padding:3px;
+
+}
+input#check
+{
+margin:0px;
+height:20px;
+}
